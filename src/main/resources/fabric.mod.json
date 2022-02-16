@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "proxy-server",
+  "version": "${version}",
+  "name": "Proxy Server",
+  "description": "Minecraft mod that allows you to connect to servers through a proxy",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/proxyserver/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ch.tunfis.proxyserver.ProxyServer"
+    ]
+  },
+  "mixins": [
+    "proxy-server.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
